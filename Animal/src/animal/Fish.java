@@ -12,11 +12,11 @@ package animal;
 public class Fish extends Animal implements Pet{
 protected String name;
     public Fish() {
-        System.out.println("Fish spawned");
+        System.out.println("There is a Fish");
     }
     public Fish(String name) {
         //super(this.name);
-        System.out.println("This fish called " + name);
+        System.out.println("This Fish called " + name);
     }
     @Override
     public String getName(){
@@ -28,14 +28,14 @@ protected String name;
     }
     @Override
     public void play(){
-        System.out.println("Fish is playing");
+        System.out.println("Fish was playing");
     }
     @Override
     public void walk(){
-        System.out.println("Fish is swimming");
+        System.out.println("Fish was swimming");
     }
     @Override
     public void eat(){
-        System.out.println("Fish is eating");
+        System.out.println("Fish was eating");
     }    
 }

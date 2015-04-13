@@ -17,29 +17,34 @@ public class Animal {
         
     }
     protected Animal(int legs){
-        System.out.println("Breeding an Animal");
+        System.out.println("Animal");
         this.legs = legs;
     }
     public void walk(){
-        System.out.println("Animal can walk");
+        System.out.println("Animal was walking");
     }
-
     public void eat(){
-        System.out.println("Animal can eat");
+        System.out.println("Animal were eating");
     }
 
     public static void main(String[] args) {
-        Cat kucing = new Cat();
-        Fish ikan = new Fish();
-        Spider laba = new Spider();
+        Animal Binatang = new Animal();      
+        Binatang.walk();
+        Binatang.eat();
         
-        kucing.eat();
-        kucing.walk();
+        Spider Tarantula = new Spider();       
+        Tarantula.eat();
         
-        ikan.play();
-        ikan.walk();
+        Cat Persia = new Cat("Persia");
+        Cat Anggora = new Cat();
+        Persia.play();
+        Persia.eat();
         
-        laba.eat();
+        Fish Nemo = new Fish();
+        Nemo.play();
+        Nemo.walk();
+        Nemo.eat();
+        
     }
     
 }

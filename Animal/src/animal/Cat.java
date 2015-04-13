@@ -12,10 +12,10 @@ package animal;
 public class Cat extends Animal implements Pet{
 protected String name;
     public Cat() {
-        System.out.println("Cat adopted");
+        System.out.println("There is a Cat");
     }
     public Cat(String name) {
-        System.out.println("This cat called " + name);
+        System.out.println("This Cat called " + name);
     }
     @Override
     public String getName(){
@@ -27,10 +27,10 @@ protected String name;
     }
     @Override
     public void play(){
-        System.out.println("Cat is playing");
+        System.out.println("Cat was playing");
     }
     @Override
     public void eat(){
-        System.out.println("Cat is eating");
+        System.out.println("Cat was eating");
     }    
 }
